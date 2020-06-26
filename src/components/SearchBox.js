@@ -12,6 +12,7 @@ function SearchBox({ handleSearchChange }) {
           aria-label="Search"
           // ADD ONCHANGE EVENT AND ASSIGN THE CALLBACK PASSED IN TO IT
           // THIS CALLBACK TAKES IN EVENT AS INPUT ARGUMENT
+          onChange={(event) => handleSearchChange(event)}
         />
       </form>
     </div>

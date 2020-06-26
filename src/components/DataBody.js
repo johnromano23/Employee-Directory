@@ -21,24 +21,24 @@ function DataBody({ users }) {
               <td data-th="Image" className="align-middle">
                 <img
                   // ADD ATTRIBUTE SRC FOR IMAGE
+                  src={picture.thumbnail}
                   alt={"profile image for " + name.first + " " + name.last}
                   className="img-responsive"
                 />
               </td>
               <td data-th="Name" className="name-cell align-middle">
-                {/* ADD FIRST NAME AND LAST NAME HERE */}
+                {name.first} {name.last}
               </td>
               <td data-th="Phone" className="align-middle">
-                {/* ADD PHONE # HERE */}
                 {phone}
               </td>
               <td data-th="Email" className="align-middle">
                 <a href={"mailto:" + email} target="__blank">
-                  {/* ADD EMAIL HERE */}
+                  {email}
                 </a>
               </td>
               <td data-th="DOB" className="align-middle">
-                {/* ADD DOB DATE HERE - USING FORMATDATE FUNC */}
+                {formatDate(dob.date)}
               </td>
             </tr>
           );

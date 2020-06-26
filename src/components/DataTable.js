@@ -11,25 +11,34 @@ function DataTable({ headings, users, handleSort }) {
       >
         <thead>
           <tr>
-            {/* ADD A LINE OF CODE TO LOOP THROUGH HEADINGS WITH .map METHOD
-                DESTRUCTURE INPUT ARGUMENT TO EXTRACT NAME and WIDTH */}
-            {/* THE FOLLOWING RETURN STATEMENT SHOULD BE INSIDE
-                OF .MAP CALLBACK BODY */}
-            return (
-            <th
-              className="col"
-              // ADD KEY AND ASSIGN IT WITH NAME PASSED IN
-              // ADD STYLE FOR WIDTH WITH WIDTH PASSED IN
-              // ADD ONCLICK EVENT TO CALL CALLBACK PASSED IN
-            >
-              {/* ADD HEADING NAME PASSED IN HERE */}
-              <span className="pointer"></span>
-            </th>
-            );
+            {
+              /* ADD A LINE OF CODE TO LOOP THROUGH HEADINGS WITH .map METHOD
+                DESTRUCTURE INPUT ARGUMENT TO EXTRACT NAME and WIDTH */
+              headings.map(({ name, width }) => {
+                return (
+                  <th
+                    className="col"
+                    // ADD KEY AND ASSIGN IT WITH NAME PASSED IN
+                    key={name}
+                    // ADD STYLE FOR WIDTH WITH WIDTH PASSED IN
+                    style={{ width }}
+                    // ADD ONCLICK EVENT TO CALL CALLBACK PASSED IN
+                    onClick={() => {
+                      handleSort(name.toLowerCase());
+                    }}
+                  >
+                    {/* / ADD HEADING NAME PASSED IN HERE / */}
+                    {name}
+                    <span className="pointer"></span>
+                  </th>
+                );
+              })
+            }
             {/* })} */}
           </tr>
         </thead>
         {/* ADD CODE TO CALL COMPONENT DATABODY PASSING USERS AS INPUT ARGUMENT */}
+        <DataBody users={users}></DataBody>
       </table>
     </div>
   );

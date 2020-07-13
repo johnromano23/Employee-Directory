@@ -1,4 +1,4 @@
-# Employee-Directory
+# Employee Directory
 
 ## Application
 https://johnromano23.github.io/User-Directory/

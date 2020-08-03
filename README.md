@@ -11,8 +11,7 @@
 - [Developer](#Developer)
 
 ## Application-Link
-
-![Screenshot (4)](https://user-images.githubusercontent.com/63254285/85859647-7df88e80-b78b-11ea-8942-e3468e11f665.png)
+https://johnromano23.github.io/Employee-Directory/
 
 ## User-Story
 

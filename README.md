@@ -2,9 +2,9 @@
 
 ## Table of Content
 
-- [Application](#Application)
-- [Story](#Story)
-- [Technology](#Technology)
+- [Application](#ApplicationLink)
+- [Story](#UserStory)
+- [Technology](#TechnologyUsed)
 - [Usage](#Usage)
 - [License](#License)
 - [Developer](#Developer)

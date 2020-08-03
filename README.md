@@ -6,7 +6,7 @@
 - [Story](#User-Story)
 - [Technology](#Technology-Used)
 - [Usage](#Usage)
-- [FutureDevelopment](#Future-Development)
+- [Future-Development](#Future-Development)
 - [License](#License)
 - [Developer](#Developer)
 

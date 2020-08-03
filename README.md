@@ -18,6 +18,7 @@ Then use `npm start` to run the application on the localhost.
 
 ## Future Development
 * Create a feature where users can input their own employee data. With that feature this application will not rely on randomizing users. This way companies/businesses would be able to use it using their own employee data.
+* Be able to filter using the number directory or  as well the DOB directory.
 
 
 ## License

@@ -11,5 +11,6 @@
 .datatable .col .pointer:hover:after {
   font-size: 80%;
   content: "🔻";
+  visibility: visible;
   margin-right: 0;
 }
